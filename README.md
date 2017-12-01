@@ -1,4 +1,1 @@
-# jacksmion.github.io
-
-# python
-# golang
+# jacksmion person home
