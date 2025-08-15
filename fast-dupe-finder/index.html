@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Dupe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/tauri.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fast Dupe Finder</h1>
+        <div class="controls">
+            <input type="text" id="path-input" placeholder="Enter path to scan...">
+            <button id="scan-button">Scan Directory</button>
+        </div>
+        <div id="status"></div>
+        <div class="results-container">
+            <div class="results-actions">
+                <div class="selection-controls">
+                    <span>Smart Select:</span>
+                    <button id="select-all-but-first">Keep First</button>
+                    <button id="select-all-but-newest">Keep Newest</button>
+                    <button id="select-all-but-oldest">Keep Oldest</button>
+                </div>
+                <button id="delete-selected-button" disabled>Delete Selected</button>
+            </div>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>
